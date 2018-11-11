@@ -8,6 +8,7 @@ RUN chmod +x /usr/bin/*.sh
 RUN install-deb.sh
 RUN install-jupyter.sh
 RUN install-haskell.sh
+RUN install-nodejs.sh
 
 EXPOSE 8888
 CMD [ "main.sh" ]
