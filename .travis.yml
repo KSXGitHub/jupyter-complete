@@ -13,7 +13,7 @@ before_script:
   # - docker pull hvksmr1996/jupyter-complete:latest
 
 script:
-  - docker build . -t "$DOCKER_IMAGE" # --cache-from hvksmr1996/jupyter-complete:latest
+  - bash ci/docker-build.bash
 
 deploy:
   provider: script
