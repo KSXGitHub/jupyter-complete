@@ -1,4 +1,4 @@
-FROM ubuntu:18.10
+FROM alpine:latest
 
 ENV PATH="/root/.local/bin:/root/bin:/.local/bin:/local/bin:${PATH}"
 
