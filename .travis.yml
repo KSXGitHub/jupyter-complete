@@ -12,6 +12,7 @@ branches:
     - docker
     - dockerhub
     - dockercloud
+    - latest
 
 services:
   - docker
@@ -20,6 +21,7 @@ before_script:
   - export DOCKER_TAG="$TRAVIS_BRANCH"
   - bash ci/before-script.bash
   - export DOCKER_IMAGE="$DOCKER_REPOSITORY:$DOCKER_TAG"
+  - export DOCKER_LATEST="$DOCKER_REPOSITORY:latest"
   - docker pull hvksmr1996/jupyter-complete:latest
 
 script:
