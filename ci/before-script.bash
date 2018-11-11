@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
-if [[ -z "$DOCKER_IMAGE" ]]; then
-  echo 'Missing $DOCKER_IMAGE'
+if [[ -z "$DOCKER_REPOSITORY" ]]; then
+  echo 'Missing $DOCKER_REPOSITORY'
   exit -1
 fi
 
