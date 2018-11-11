@@ -14,10 +14,4 @@ before_script:
 
 script:
   - bash ci/docker-build.bash
-
-deploy:
-  provider: script
-  script: bash ci/docker-push.bash
-  on:
-    all_branches: true
-    tags: true
+  - bash ci/docker-push.bash
