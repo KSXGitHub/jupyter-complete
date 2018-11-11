@@ -11,7 +11,7 @@ before_script:
   - bash ci/before-script.bash
 
 script:
-  - docker build . -t
+  - docker build . -t "$DOCKER_IMAGE":"$DOCKER_TAG"
 
 deploy:
   provider: script
