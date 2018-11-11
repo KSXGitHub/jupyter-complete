@@ -3,6 +3,16 @@ sudo:
 
 language: bash
 
+branches:
+  except:
+    - draft
+    - tmp
+    - /.*\.(draft|tmp)$/
+    - /^(draft|tmp)\..*/
+    - docker
+    - dockerhub
+    - dockercloud
+
 services:
   - docker
 
