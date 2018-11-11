@@ -19,5 +19,5 @@ deploy:
   provider: script
   script: bash ci/docker-push.bash
   on:
-    branch: master
+    all_branches: true
     tags: true
