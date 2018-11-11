@@ -9,4 +9,5 @@ RUN install-deb.sh
 RUN install-jupyter.sh
 RUN install-haskell.sh
 
+EXPOSE 8888
 CMD [ "main.sh" ]
