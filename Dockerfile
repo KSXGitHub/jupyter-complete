@@ -10,6 +10,7 @@ RUN install-deb.sh
 RUN install-jupyter.sh
 RUN install-haskell.sh
 RUN install-nodejs.sh
+RUN clean.sh
 
 EXPOSE 8888
 CMD [ "main.sh" ]
