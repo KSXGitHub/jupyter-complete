@@ -1,8 +1,6 @@
 #! /usr/bin/env sh
 
-echo 'JUPYTER NOTEBOOK'
-
-echo 'Starting Server...'
+echo 'STARTING SERVER...'
 exec jupyter notebook \
   --port=8888 \
   --allow-root
