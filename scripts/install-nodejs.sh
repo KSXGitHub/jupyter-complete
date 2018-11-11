@@ -4,7 +4,7 @@ echo 'NODEJS'
 
 echo 'Installing Node.js...'
 wget -O - https://deb.nodesource.com/setup_11.x | bash || exit $?
-apt-get install -y nodejs || exit $?
+apt-get install -y nodejs npm || exit $?
 
 echo 'Installing jupyter-nodejs...'
 git clone https://github.com/notablemind/jupyter-nodejs.git || exit $?
