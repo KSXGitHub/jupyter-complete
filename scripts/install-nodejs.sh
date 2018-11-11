@@ -3,7 +3,7 @@
 echo 'NODEJS'
 
 echo 'Installing Node.js...'
-wget -O - https://deb.nodesource.com/setup_5.x | bash || exit $?
+wget -O - https://deb.nodesource.com/setup_11.x | bash || exit $?
 apt-get install -y nodejs || exit $?
 
 echo 'Installing jupyter-nodejs...'
