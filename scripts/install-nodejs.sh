@@ -2,14 +2,9 @@
 
 echo 'NODEJS'
 
-echo 'Installing nvm...'
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash || exit $?
-export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 echo 'Installing Node.js...'
-nvm i node || exit $?
-nvm use node || exit $?
+wget -O - https://deb.nodesource.com/setup_5.x | bash || exit $?
+apt-get install -y nodejs || exit $?
 
 echo 'Installing jupyter-nodejs...'
 git clone https://github.com/notablemind/jupyter-nodejs.git || exit $?
