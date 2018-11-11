@@ -6,5 +6,16 @@ language: bash
 services:
   - docker
 
+before_script:
+  - export DOCKER_TAG="${TRAVIS_TAG:-latest}
+  - bash ci/before-script.bash
+
 script:
-  - docker build .
+  - docker build . -t
+
+deploy:
+  provider: script
+  script: bash ci/docker-push.bash
+  on:
+    branch: master
+    tags: true
