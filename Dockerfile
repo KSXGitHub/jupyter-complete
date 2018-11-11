@@ -1,7 +1,6 @@
 FROM ubuntu:18.10
 
-ENV CABAL_PATH="/root/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin"
-ENV PATH="/root/.local/bin:/root/bin:/.local/bin:/local/bin:${CABAL_PATH}:${PATH}"
+ENV PATH="/root/.local/bin:/root/bin:/.local/bin:/local/bin:${PATH}"
 
 ADD scripts /usr/bin
 RUN chmod +x /usr/bin/*.sh
