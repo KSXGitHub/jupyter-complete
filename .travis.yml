@@ -7,7 +7,7 @@ services:
   - docker
 
 before_script:
-  - export DOCKER_TAG="${TRAVIS_TAG:-latest}
+  - export DOCKER_TAG="${TRAVIS_TAG:-latest}"
   - bash ci/before-script.bash
 
 script:
