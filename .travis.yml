@@ -3,3 +3,6 @@ sudo:
 
 services:
   - docker
+
+script:
+  - docker build .
