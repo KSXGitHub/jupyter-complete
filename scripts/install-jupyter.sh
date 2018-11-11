@@ -3,8 +3,8 @@
 echo 'JUPYTER NOTEBOOK'
 
 echo 'Installing necessary python tools...'
-pip3 install --upgrade pip || exit $?
-pip3 install --upgrade virtualenv || exit $?
+python3 -m pip install --upgrade pip || exit $?
+python3 -m pip install --upgrade virtualenv || exit $?
 
 echo 'Installing Jupyter Notebook...'
-pip3 install jupyter || exit $?
+python3 -m pip install jupyter || exit $?
