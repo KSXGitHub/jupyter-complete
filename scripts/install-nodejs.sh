@@ -13,3 +13,11 @@ mkdir -p ~/.ipython/kernels/nodejs/ || exit $?
 npm install && node install.js || exit $?
 npm run build || exit $?
 npm run build-ext || exit $?
+
+echo 'Installing IJavaScript...'
+npm install --global ijavascript || exit $?
+ijsinstall || exit $?
+
+echo 'Installing ITypeScript...'
+npm install --global itypescript || exit $?
+its --ts-install=global
