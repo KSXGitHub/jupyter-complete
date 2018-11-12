@@ -8,10 +8,10 @@ curl https://raw.githubusercontent.com/haskell/ghcup/master/ghcup > ~/.ghcup/bin
 chmod +x ~/.ghcup/bin/ghcup
 
 echo 'Installing GHC...'
-ghcup Installing || exit $?
+ghcup install || exit $?
 
 echo 'Installing Cabal...'
-ghcup Install-cabal || exit $?
+ghcup install-cabal || exit $?
 
 echo 'Updating package list...'
 cabal update || exit $?
